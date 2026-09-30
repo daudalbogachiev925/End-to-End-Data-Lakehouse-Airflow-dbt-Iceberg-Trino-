@@ -1,0 +1,16 @@
+name: 'lakehouse'
+version: '1.0.0'
+profile: 'lakehouse'
+
+model-paths: ["models"]
+test-paths: ["tests"]
+macro-paths: ["macros"]
+
+models:
+  lakehouse:
+    staging:
+      +materialized: table
+      +schema: silver
+    marts:
+      +materialized: table
+      +schema: gold
