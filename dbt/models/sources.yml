@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: bronze
+    catalog: iceberg
+    schema: bronze
+    tables:
+      - name: events_raw
